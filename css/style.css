@@ -203,3 +203,45 @@ footer {
     transform: scale(1.3);
     transition: .3s;
 }
+
+@media (max-width: 500px){
+
+    nav {
+        padding: 7px;
+        padding-bottom: 13px;
+    }
+
+    h1 {
+        margin-left: 1px;
+        margin-top: 8px;
+        font-size: 22px;
+    }
+
+    nav a {
+        margin-right: 30px;
+    }
+    
+    .menu-exercicios{
+        display: none;
+    }
+
+    table {
+        border-radius: 15px;
+        padding: 10px 10px;
+        max-width: 500px;
+    }
+
+    .td-texto{
+        display: none;
+    }
+
+    img {
+        max-width: 300px;
+    }
+
+    #brasileiro, #brasileiro2 {
+        padding-left: 10px;
+        font-size: 14px;
+    }
+
+}
