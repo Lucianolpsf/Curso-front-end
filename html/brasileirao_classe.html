@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="widtd=device-widtd, initial-scale=1.0">
+        <title>Brasileirao</title>
+        
+        <style>
+        body{
+            font-family: arial;
+        }
+        table{
+            border: 1px solid #dddddd;
+            border-collapse: collapse;
+            width: 550px;
+        }
+         tr{
+            border-top: 1px solid #dddddd;
+            text-align: center;
+            font-size: 14px;
+        }
+         th{
+            text-align: center;
+            font-size: 13px;
+            color: #999999;
+            font-weight:bold;
+        }
+        td{
+            color: #666666;
+            font-size: 14px;
+        }
+        td:nth-child(odd){
+           background-color:#f7f7f7;
+        }
+
+        .tres_primeiros{
+            font-size: 18px;
+            color: #003366;
+            background-color: white;
+        }
+        .cinco_a_doze{
+            font-size: 18px;
+            color: #de9800;
+            background-color: white;
+        }
+        .tres_a_desesseis{
+            font-size: 18px;
+            color: #cccccc;
+            background-color: white;
+        }
+        .desessete_a_vinte{
+            font-size: 18px;
+            color: #c91b04;
+            background-color: white;
+        }
+        .nomes_times{
+            font-size: 14px;
+            color:#666666;
+            font-weight:bold;
+            text-align:left; 
+        }
+        .pontos{
+            font-weight:bold;
+            color:black;
+        }
+        img{
+            width:20px;
+        }
+    </style>
+
+    </head>
+    
+    <body>
+        <table>
+            <!-- Titulos da tabela-->
+            <tr>
+                <th colspan="2"></th>
+                <th> P </th>
+                <th> J </th>
+                <th> V </th>
+                <th> E </th>
+                <th> D </th>
+                <th> GP </th>
+                <th> GC </th>
+                <th> SG </th>
+                <th> % </th>
+            </tr>
+            <colgroup>
+                <col span="1">
+                <col span="1" style="width:30% ;">
+                <col span="7" style="width:6%;">
+            </colgroup>
+            <!-- dados da tabela da tabela-->
+            <tr>
+                <td class="tres_primeiros"><b>1</b></td>
+                <td class="nomes_times">
+                    <img src="../img/cor.png" alt="Corinthias"> Corinthias</td>
+                <td class="pontos">17</td>
+                <td>7</td>
+                <td>5</td>
+                <td>2</td>
+                <td>0</td>
+                <td>15</td>
+                <td>8</td>
+                <td>7</td>
+                <td>81</td>
+            </tr>
+            <tr>
+                <td class="tres_primeiros"><b>2</b></td>
+               <td class="nomes_times">
+                    <img src="../img/cea.png" alt="Ceará"> Ceará</td>
+                    <td class="pontos">17</td>
+                <td>7</td>
+                <td>5</td>
+                <td>2</td>
+                <td>0</td>
+                <td>7</td>
+                <td>1</td>
+                <td>6</td>
+                <td>81</td>
+            </tr>
+            <tr>
+                <td class="tres_primeiros"><b>3</b></td>
+                <td class="nomes_times">
+                    <img src="../img/flu.png" alt="Fluminense"> Fluminense</td>
+                    <td class="pontos">15</td>
+                <td>7</td>
+                <td>5</td>
+                <td>0</td>
+                <td>2</td>
+                <td>11</td>
+                <td>5</td>
+                <td>6</td>
+                <td>71.4</td>
+            </tr>
+            <tr style="border-bottom:2px solid #cccccc;">
+                <td style="font-size: 18px; color: #1398be;background-color: white;"><b>4</b></td>
+                <td class="nomes_times">
+                    <img src="../img/san.png" alt="Santos"> Santos</td>
+                    <td class="pontos">12</td>
+                <td>7</td>
+                <td>3</td>
+                <td>3</td>
+                <td>1</td>
+                <td>15</td>
+                <td>10</td>
+                <td>5</td>
+                <td>57.1</td>
+            </tr>
+            <tr>
+                <td class="cinco_a_doze"><b>5</b></td>
+                <td class="nomes_times">
+                    <img src="../img/spf.png" alt="São Paulo"> São Paulo</td>
+                <td class="pontos">11</td>
+                <td>7</td>
+                <td>3</td>
+                <td>2</td>
+                <td>2</td>
+                <td>9</td>
+                <td>6</td>
+                <td>3</td>
+                <td>52.4</td>
+            </tr>
+            <tr>
+                <td class="cinco_a_doze"><b>6</b></td>
+                <td class="nomes_times">
+                    <img src="../img//goi.png" alt="Goias"> Goias</td>
+                    <td class="pontos">10</td>
+                <td>7</td>
+                <td>3</td>
+                <td>1</td>
+                <td>3</td>
+                <td>9</td>
+                <td>10</td>
+                <td>-1</td>
+                <td>47.6</td>
+            </tr>
+            <tr>
+                <td class="cinco_a_doze"><b>7</b></td>
+                <td class="nomes_times">
+                    <img src="../img/bot.png" alt="Botafogo"> Botafogo</td>
+                 <td class="pontos">9</td>
+                <td>7</td>
+                <td>2</td>
+                <td>3</td>
+                <td>2</td>
+                <td>9</td>
+                <td>11</td>
+                <td>2</td>
+                <td>42.9</td>
+            </tr>
+            <tr>
+                <td class="cinco_a_doze"><b>8</b></td>
+                <td class="nomes_times">
+                    <img src="../img/fla.png" alt="Flamengo"> Flamengo</td>
+                    <td class="pontos">9</td>
+                <td>7</td>
+                <td>2</td>
+                <td>3</td>
+                <td>2</td>
+                <td>9</td>
+                <td>8</td>
+                <td>1</td>
+                <td>42.9</td>
+            </tr>
+            <tr>
+                <td class="cinco_a_doze"><b>9</b></td>
+                <td class="nomes_times">
+                    <img src="../img/cfc.png" alt="Coritiba"> Coritiba</td>
+                <td class="pontos">9</td>
+                <td>6</td>
+                <td>2</td>
+                <td>3</td>
+                <td>1</td>
+                <td>7</td>
+                <td>7</td>
+                <td>0</td>
+                <td>50</td>
+            </tr>
+            <tr>
+                <td class="cinco_a_doze"><b>10</b></td>
+                <td class="nomes_times">
+                    <img src="../img/cma.jpg" alt="America-MG"> America-MG</td>
+                    <td class="pontos">8</td>
+                <td>6</td>
+                <td>2</td>
+                <td>3</td>
+                <td>1</td>
+                <td>7</td>
+                <td>7</td>
+                <td>0</td>
+                <td>50</td>
+            </tr>
+            <tr>
+                <td class="cinco_a_doze"><b>11</b></td>
+                <td class="nomes_times">
+                    <img src="../img/pal.png" alt="Palmeiras"> Palmeiras</td>
+                <td class="pontos">8</td>
+                <td>6</td>
+                <td>2</td>
+                <td>2</td>
+                <td>2</td>
+                <td>5</td>
+                <td>4</td>
+                <td>1</td>
+                <td>44.4</td>
+            </tr>
+            <tr>
+                <td class="cinco_a_doze"><b>12</b></td>
+                <td class="nomes_times">
+                    <img src="../img/cui.png" alt="Cuiabá"> Cuiabá</td>
+                <td class="pontos">8</td>
+                <td>7</td>
+                <td>2</td>
+                <td>2</td>
+                <td>3</td>
+                <td>10</td>
+                <td>11</td>
+                <td>-1</td>
+                <td>38.1</td>
+            </tr>
+            <tr>
+                <td class="tres_a_desesseis"><b>13</b></td>
+                <td class="nomes_times">
+                    <img src="../img/ava.png" alt="Avai"> Avai</td>
+                <td class="pontos">8</td>
+                <td>7</td>
+                <td>2</td>
+                <td>2</td>
+                <td>3</td>
+                <td>10</td>
+                <td>11</td>
+                <td>-1</td>
+                <td>38.1</td>
+            </tr>
+            <tr>
+                <td class="tres_a_desesseis"><b>14</b></td>
+                <td class="nomes_times">
+                    <img src="../img/rbr.png" alt="Bragantino"> Bragantino</td>
+                <td class="pontos">8</td>
+                <td>7</td>
+                <td>2</td>
+                <td>2</td>
+                <td>3</td>
+                <td>7</td>
+                <td>8</td>
+                <td>-1</td>
+                <td>38.1</td>
+            </tr>
+            <tr>
+                <td class="tres_a_desesseis"><b>15</b></td>
+                <td class="nomes_times">
+                    <img src="../img/for.png" alt="Fortaleza"> Fortaleza</td>
+                <td class="pontos">8</td>
+                <td>6</td>
+                <td>2</td>
+                <td>2</td>
+                <td>2</td>
+                <td>9</td>
+                <td>11</td>
+                <td>-1</td>
+                <td>44.4</td>
+            </tr>
+            <tr style="border-bottom:2px solid #cccccc;">
+                <td class="tres_a_desesseis"><b>16</b></td>
+                <td class="nomes_times">
+                    <img src="../img/cap.png" alt="Atletico-PR"> Atletico-PR</td>
+                <td class="pontos">7</td>
+                <td>7</td>
+                <td>2</td>
+                <td>1</td>
+                <td>4</td>
+                <td>10</td>
+                <td>15</td>
+                <td>-5</td>
+                <td>33.3</td>
+            </tr>
+            <tr>
+                <td class="desessete_a_vinte"><b>17</b></td>
+                <td class="nomes_times">
+                    <img src="../img/int.png" alt="Internacional"> Internacional</td>
+                <td class="pontos">6</td>
+                <td>6</td>
+                <td>2</td>
+                <td>0</td>
+                <td>4</td>
+                <td>10</td>
+                <td>12</td>
+                <td>-2</td>
+                <td>33.3</td>
+            </tr>
+            <tr>
+                <td class="desessete_a_vinte"><b>18</b></td>
+                <td class="nomes_times">
+                    <img src="../img/cam.png" alt="Atletico-MG"> Atletico-MG</td>
+                <td class="pontos">6</td>
+                <td>7</td>
+                <td>2</td>
+                <td>0</td>
+                <td>5</td>
+                <td>10</td>
+                <td>12</td>
+                <td>-6</td>
+                <td>28.6</td>
+            </tr>
+            <tr>
+                <td class="desessete_a_vinte"><b>19</b></td>
+                <td class="nomes_times">
+                    <img src="../img/juv.png" alt="Juventude"> Juventude</td>
+                <td class="pontos">5</td>
+                <td>7</td>
+                <td>1</td>
+                <td>2</td>
+                <td>4</td>
+                <td>5</td>
+                <td>12</td>
+                <td>-7</td>
+                <td>23.8</td>
+            </tr>
+            <tr>
+                <td class="desessete_a_vinte"><b>20</b></td>
+                <td class="nomes_times">
+                    <img src="../img/acg.png" alt="Atletico-GO">  Atletico-GO</td>
+                <td class="pontos">1</td>
+                <td>6</td>
+                <td>0</td>
+                <td>1</td>
+                <td>5</td>
+                <td>3</td>
+                <td>9</td>
+                <td>-6</td>
+                <td>5.6</td>
+            </tr>
+            <tr>
+                <td colspan="11" style="font-size: 10px; color:#8f8f8f; text-align:left"> 
+                   <div style="display: flex;">
+                      <div style="width:8px; height: 8px; background-color:#003366; border-radius: 25%; margin-right: 5px;"></div>  TAÇA LIBERTADORES 
+                    
+                    <div style="width:8px; height: 8px; background-color:#1398be; border-radius: 25%;margin-left: 5px ; margin-right: 5px;"></div>  PRÉ LIBERTADORES 
+                    
+                    <div style="width:8px; height: 8px; background-color:#de9800; border-radius: 25%; margin-left: 5px ; margin-right: 5px;"></div>  SUL-AMERICANA
+                   
+                    <div style="width:8px; height: 8px; background-color:#c91b04; border-radius: 25%; margin-left: 5px ; margin-right: 5px;"></div>  REBAIXADO
+                    </div>                        
+                                           
+                    <p style="font-size: 10px; color:#555555; text-align:left"> 
+                       <b>P</b> pontos
+                       <b>J</b> jogos
+                       <b>V</b> vitoria
+                       <b>E</b> empate
+                       <b>D</b> derrotas
+                       <b>GP</b> gols pró
+                       <b>GC</b> gols contra
+                       <b>SG</b> saldo de gols
+                       <b>(%)</b> aproveitamento
+                    </p>                
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>

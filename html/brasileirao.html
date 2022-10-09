@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="widtd=device-widtd, initial-scale=1.0">
+        <title>Brasileirao</title>
+        <style>
+        body{
+            font-family: arial;
+        }
+        table{
+            border: 1px solid #dddddd;
+            border-collapse: collapse;
+            width: 475px;
+        }
+         tr{
+            border-top: 1px solid #dddddd;
+            text-align: center;
+            font-size: 14px;
+        }
+         th{
+            text-align: center;
+            font-size: 13px;
+            color: #999999;
+            font-weight:bold;
+        }
+        td{
+            color: #666666;
+            font-size: 14px;
+        }
+        td:nth-child(odd){
+                    background-color:#f7f7f7;
+        }
+        
+    </style>
+    </head>
+    <body>
+        <table>
+            <!-- Titulos da tabela-->
+            <tr>
+                <th colspan="2"></th>
+                <th> P </th>
+                <th> J </th>
+                <th> V </th>
+                <th> E </th>
+                <th> D </th>
+                <th> GP </th>
+                <th> GC </th>
+                <th> SG </th>
+                <th> % </th>
+            </tr>
+            <colgroup>
+                <col span="1">
+                <col span="1" style="width:35% ;">
+                <col span="7" style="width:6%;">
+            </colgroup>
+            <!-- dados da tabela da tabela-->
+            <tr>
+                <td style="font-size: 18px; color: #003366; background-color: white;"><b>1</b></td>
+                <td style="font-size: 14px; color:#666666; font-weight:bold; text-align:left; ">
+                    <img src="../img/cor.png" alt="Corinthias" width="10px"> Corinthias</td>
+                <td style="font-weight:bold;color:black;">17</td>
+                <td>7</td>
+                <td>5</td>
+                <td>2</td>
+                <td>0</td>
+                <td>15</td>
+                <td>8</td>
+                <td>7</td>
+                <td>81</td>
+            </tr>
+            <tr>
+                <td style="font-size: 18px; color: #003366; background-color: white;"><b>2</b></td>
+                <td style="font-size: 14px; color:#666666; font-weight:bold; text-align:left; ">
+                    <img src="../img/cea.png" alt="Ceará" width="10px"> Ceará</td>
+                <td style="font-weight:bold;color:black;">17</td>
+                <td>7</td>
+                <td>5</td>
+                <td>2</td>
+                <td>0</td>
+                <td>7</td>
+                <td>1</td>
+                <td>6</td>
+                <td>81</td>
+            </tr>
+            <tr>
+                <td style="font-size: 18px; color: #003366;background-color: white;"><b>3</b></td>
+                <td style="font-size: 14px; color:#666666; font-weight:bold; text-align:left; ">
+                    <img src="../img/flu.png" alt="Fluminense" width="10px"> Fluminense</td>
+                <td style="font-weight:bold;color:black;">15</td>
+                <td>7</td>
+                <td>5</td>
+                <td>0</td>
+                <td>2</td>
+                <td>11</td>
+                <td>5</td>
+                <td>6</td>
+                <td>71.4</td>
+            </tr>
+            <tr style="border-bottom:2px solid #cccccc;">
+                <td style="font-size: 18px; color: #1398be;background-color: white;"><b>4</b></td>
+                <td style="font-size: 14px; color:#666666; font-weight:bold; text-align:left; ">
+                    <img src="../img/san.png" alt="Santos" width="10px"> Santos</td>
+                <td style="font-weight:bold;color:black;">12</td>
+                <td>7</td>
+                <td>3</td>
+                <td>3</td>
+                <td>1</td>
+                <td>15</td>
+                <td>10</td>
+                <td>5</td>
+                <td>57.1</td>
+            </tr>
+            <tr>
+                <td style="font-size: 18px; color: #de9800;background-color: white;"><b>5</b></td>
+                <td style="font-size: 14px; color:#666666; font-weight:bold; text-align:left; ">
+                    <img src="../img/spf.png" alt="São Paulo" width="10px"> São Paulo</td>
+                <td style="font-weight:bold;color:black;">11</td>
+                <td>7</td>
+                <td>3</td>
+                <td>2</td>
+                <td>2</td>
+                <td>9</td>
+                <td>6</td>
+                <td>3</td>
+                <td>52.4</td>
+            </tr>
+            <tr>
+                <td style="font-size: 18px; color: #de9800;background-color: white;"><b>6</b></td>
+                <td style="font-size: 14px; color:#666666; font-weight:bold; text-align:left; ">
+                    <img src="../img//goi.png" alt="Goias" width="10px"> Goias</td>
+                <td style="font-weight:bold;color:black;">10</td>
+                <td>7</td>
+                <td>3</td>
+                <td>1</td>
+                <td>3</td>
+                <td>9</td>
+                <td>10</td>
+                <td>-1</td>
+                <td>47.6</td>
+            </tr>
+            <tr>
+                <td style="font-size: 18px; color: #de9800;background-color: white;"><b>7</b></td>
+                <td style="font-size: 14px; color:#666666; font-weight:bold; text-align:left; ">
+                    <img src="../img/bot.png" alt="Botafogo" width="10px"> Botafogo</td>
+                <td style="font-weight:bold;color:black;">9</td>
+                <td>7</td>
+                <td>2</td>
+                <td>3</td>
+                <td>2</td>
+                <td>9</td>
+                <td>11</td>
+                <td>2</td>
+                <td>42.9</td>
+            </tr>
+            <tr>
+                <td style="font-size: 18px; color: #de9800;background-color: white;"><b>8</b></td>
+                <td style="font-size: 14px; color:#666666; font-weight:bold; text-align:left; ">
+                    <img src="../img/fla.png" alt="Flamengo" width="10px"> Flamengo</td>
+                <td style="font-weight:bold;color:black;">9</td>
+                <td>7</td>
+                <td>2</td>
+                <td>3</td>
+                <td>2</td>
+                <td>9</td>
+                <td>8</td>
+                <td>1</td>
+                <td>42.9</td>
+            </tr>
+            <tr>
+                <td style="font-size: 18px; color: #de9800;background-color: white;"><b>9</b></td>
+                <td style="font-size: 14px; color:#666666; font-weight:bold; text-align:left; ">
+                    <img src="../img/cfc.png" alt="Coritiba" width="10px"> Coritiba</td>
+                <td style="font-weight:bold;color:black;">9</td>
+                <td>6</td>
+                <td>2</td>
+                <td>3</td>
+                <td>1</td>
+                <td>7</td>
+                <td>7</td>
+                <td>0</td>
+                <td>50</td>
+            </tr>
+            <tr>
+                <td style="font-size: 18px; color: #de9800;background-color: white;"><b>10</b></td>
+                <td style="font-size: 14px; color:#666666; font-weight:bold; text-align:left; ">
+                    <img src="../img/cma.jpg" alt="America-MG" width="10px"> America-MG</td>
+                <td style="font-weight:bold;color:black;">8</td>
+                <td>6</td>
+                <td>2</td>
+                <td>3</td>
+                <td>1</td>
+                <td>7</td>
+                <td>7</td>
+                <td>0</td>
+                <td>50</td>
+            </tr>
+            <tr>
+                <td style="font-size: 18px; color: #de9800;background-color: white;"><b>11</b></td>
+                <td style="font-size: 14px; color:#666666; font-weight:bold; text-align:left; ">
+                    <img src="../img/pal.png" alt="Palmeiras" width="10px"> Palmeiras</td>
+                <td style="font-weight:bold;color:black;">8</td>
+                <td>6</td>
+                <td>2</td>
+                <td>2</td>
+                <td>2</td>
+                <td>5</td>
+                <td>4</td>
+                <td>1</td>
+                <td>44.4</td>
+            </tr>
+            <tr>
+                <td style="font-size: 18px; color: #de9800;background-color: white;"><b>12</b></td>
+                <td style="font-size: 14px; color:#666666; font-weight:bold; text-align:left; ">
+                    <img src="../img/cui.png" alt="Cuiabá" width="10px"> Cuiabá</td>
+                <td style="font-weight:bold;color:black;">8</td>
+                <td>7</td>
+                <td>2</td>
+                <td>2</td>
+                <td>3</td>
+                <td>10</td>
+                <td>11</td>
+                <td>-1</td>
+                <td>38.1</td>
+            </tr>
+            <tr>
+                <td style="font-size: 18px; color: #cccccc;background-color: white;"><b>13</b></td>
+                <td style="font-size: 14px; color:#666666; font-weight:bold; text-align:left; ">
+                    <img src="../img/ava.png" alt="Avai" width="10px"> Avai</td>
+                <td style="font-weight:bold;color:black;">8</td>
+                <td>7</td>
+                <td>2</td>
+                <td>2</td>
+                <td>3</td>
+                <td>10</td>
+                <td>11</td>
+                <td>-1</td>
+                <td>38.1</td>
+            </tr>
+            <tr>
+                <td style="font-size: 18px; color: #cccccc;background-color: white;"><b>14</b></td>
+                <td style="font-size: 14px; color:#666666; font-weight:bold; text-align:left; ">
+                    <img src="../img/rbr.png" alt="Bragantino" width="10px"> Bragantino</td>
+                <td style="font-weight:bold;color:black;">8</td>
+                <td>7</td>
+                <td>2</td>
+                <td>2</td>
+                <td>3</td>
+                <td>7</td>
+                <td>8</td>
+                <td>-1</td>
+                <td>38.1</td>
+            </tr>
+            <tr>
+                <td style="font-size: 18px; color: #cccccc;background-color: white;"><b>15</b></td>
+                <td style="font-size: 14px; color:#666666; font-weight:bold; text-align:left; ">
+                    <img src="../img/for.png" alt="Fortaleza" width="10px"> Fortaleza</td>
+                <td style="font-weight:bold;color:black;">8</td>
+                <td>6</td>
+                <td>2</td>
+                <td>2</td>
+                <td>2</td>
+                <td>9</td>
+                <td>11</td>
+                <td>-1</td>
+                <td>44.4</td>
+            </tr>
+            <tr style="border-bottom:2px solid #cccccc;">
+                <td style="font-size: 18px; color: #cccccc;background-color: white;"><b>16</b></td>
+                <td style="font-size: 14px; color:#666666; font-weight:bold; text-align:left; ">
+                    <img src="../img/cap.png" alt="Atletico-PR" width="10px"> Atletico-PR</td>
+                <td style="font-weight:bold;color:black;">7</td>
+                <td>7</td>
+                <td>2</td>
+                <td>1</td>
+                <td>4</td>
+                <td>10</td>
+                <td>15</td>
+                <td>-5</td>
+                <td>33.3</td>
+            </tr>
+            <tr>
+                <td style="font-size: 18px; color: #c91b04;background-color: white;"><b>17</b></td>
+                <td style="font-size: 14px; color:#666666; font-weight:bold; text-align:left; ">
+                    <img src="../img/int.png" alt="Internacional" width="10px"> Internacional</td>
+                <td style="font-weight:bold;color:black;">6</td>
+                <td>6</td>
+                <td>2</td>
+                <td>0</td>
+                <td>4</td>
+                <td>10</td>
+                <td>12</td>
+                <td>-2</td>
+                <td>33.3</td>
+            </tr>
+            <tr>
+                <td style="font-size: 18px; color: #c91b04;background-color: white;"><b>18</b></td>
+                <td style="font-size: 14px; color:#666666; font-weight:bold; text-align:left; ">
+                    <img src="../img/cam.png" alt="Atletico-MG" width="10px"> Atletico-MG</td>
+                <td style="font-weight:bold;color:black;">6</td>
+                <td>7</td>
+                <td>2</td>
+                <td>0</td>
+                <td>5</td>
+                <td>10</td>
+                <td>12</td>
+                <td>-6</td>
+                <td>28.6</td>
+            </tr>
+            <tr>
+                <td style="font-size: 18px; color: #c91b04;background-color: white;"><b>19</b></td>
+                <td style="font-size: 14px; color:#666666; font-weight:bold; text-align:left; ">
+                    <img src="../img/juv.png" alt="Juventude" width="10px"> Juventude</td>
+                <td style="font-weight:bold;color:black;">5</td>
+                <td>7</td>
+                <td>1</td>
+                <td>2</td>
+                <td>4</td>
+                <td>5</td>
+                <td>12</td>
+                <td>-7</td>
+                <td>23.8</td>
+            </tr>
+            <tr>
+                <td style="font-size: 18px; color: #c91b04;background-color: white;"><b>20</b></td>
+                <td style="font-size: 14px; color:#666666; font-weight:bold; text-align:left; ">
+                    <img src="../img/acg.png" alt="Atletico-GO" width="10px">  Atletico-GO</td>
+                <td style="font-weight:bold;color:black;">1</td>
+                <td>6</td>
+                <td>0</td>
+                <td>1</td>
+                <td>5</td>
+                <td>3</td>
+                <td>9</td>
+                <td>-6</td>
+                <td>5.6</td>
+            </tr>
+            <tr>
+                <td colspan="11" style="font-size: 10px; color:#8f8f8f; text-align:left"> 
+                   <div style="display: flex;">
+                      <div style="width:8px; height: 8px; background-color:#003366; border-radius: 25%; margin-right: 5px;"></div>  TAÇA LIBERTADORES 
+                    
+                    <div style="width:8px; height: 8px; background-color:#1398be; border-radius: 25%;margin-left: 5px ; margin-right: 5px;"></div>  PRÉ LIBERTADORES 
+                    
+                    <div style="width:8px; height: 8px; background-color:#de9800; border-radius: 25%; margin-left: 5px ; margin-right: 5px;"></div>  SUL-AMERICANA
+                   
+                    <div style="width:8px; height: 8px; background-color:#c91b04; border-radius: 25%; margin-left: 5px ; margin-right: 5px;"></div>  REBAIXADO
+                    </div>                        
+                                           
+                    <p style="font-size: 10px; color:#555555; text-align:left"> 
+                       <b>P</b> pontos
+                       <b>J</b> jogos
+                       <b>V</b> vitoria
+                       <b>E</b> empate
+                       <b>D</b> derrotas
+                       <b>GP</b> gols pró
+                       <b>GC</b> gols contra
+                       <b>SG</b> saldo de gols
+                       <b>(%)</b> aproveitamento
+                    </p>                
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>
