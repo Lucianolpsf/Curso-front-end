@@ -204,7 +204,7 @@ footer {
     transition: .3s;
 }
 
-@media (max-width: 500px){
+@media (max-width: 700px){
 
     nav {
         padding: 7px;
@@ -240,7 +240,8 @@ footer {
     }
 
     #brasileiro, #brasileiro2 {
-        padding-left: 10px;
+        padding-left: 5px;
+        padding-right: 5px;
         font-size: 14px;
     }
 
