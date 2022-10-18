@@ -1,9 +1,11 @@
 * {
     margin: 0;
-    padding: 0;    
-}
-body {
+    padding: 0;   
     font-family: Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 h1 {
@@ -15,6 +17,7 @@ h1 {
 
 #navegacao {
     position: fixed;
+    z-index: 1;
 }
 
 nav {
@@ -43,122 +46,96 @@ nav a:hover {
     border-radius: 30%;
 }
 
-hr {
-    width: 100%;
-    height: 5px;
-    background-color:black;
-    border: none;
-}
-
-
 /* lista de exercicios */
-.menu-exercicios {
+.menu-lateral {
+    padding-top: 70px;
     width: 30vh;
-    height: 100;
+    height: calc(100vh - 70px) ;
     color:white;
     background-color: rgb(35, 9, 107);
-    
-    
+    position: fixed;
+    display: flex;
 }
 
-.menu-exercicio-lista {
-    list-style: none;;
-    
+.menu-lateral-lista {
+    list-style: none;
+    width: 100%;
 }
 
-.menu-exercicio-lista li{
+.menu-lateral-lista li{
     padding: 10px;
     padding-left: 25px;
     list-style: none;
 }
 
-.menu-exercicio-lista li a {
+.menu-lateral-lista li a {
     text-decoration: none;
     color: white;
 }
 
-.menu-exercicio-lista li:hover {
+.menu-lateral-lista li:hover {
     background-color: rgb(39, 0, 145);
 }
 
 .container {
-    display: flex;
-    padding-top: 50px;
+    position: relative;
 }
 
 .conteudo {
-    width: 100%;
+    padding: 70px 0 0 0;
+    position: absolute;
+    left: 30vh;
     background-color: rgb(118, 118, 255);
-    
-   
+    width:calc(100% - 30vh)
 }
 
-.titulo {
+.conteudo-titulo {
     background-color: white;
-    padding: 5%;
-    margin: 15px;
-    margin-bottom: -25px;
+    padding: 3rem;
     border-radius: 15px;
     text-align: center;
+    margin: 0rem 10rem;
 }
 
-.lista-exercicios {
-    
-    margin: 5%;
-}
-
-ul {
+.conteudo-exercicio ul {
     list-style: none;
 }
 
-ul li {
-    padding-bottom: 30px;
-}
-
-table {
+.conteudo-card {
+    text-align:center; 
     background-color:rgb(192, 198, 221);
-    border-radius: 25px;
-    padding: 10px 110px;
-    
-    width: 100%;
-}
-
-table tr {
-    text-align: center;
+    border-radius: 10px;
+    padding: 1rem;
+    margin: 1rem 10rem;
     display: flex;
-    justify-content:center;
+    flex-direction: column;
+    align-items: center;
 }
-
-table tr th{
-    padding-bottom: 10px;
-    font-size: 36px;
+.conteudo-card h2 {
+    padding-bottom: 1rem;
     color: white;
 }
-
-.td-texto {
-    width: 100%;
-    padding-right: 45px;
-    display: flex;
-}
-
-.td-texto p {
+.conteudo-exercicio img {
+    max-width: 450px;
+    padding-bottom: 1rem;
     border-radius: 10px;
-    padding: 80px 50px 80px 56px;
+}
+
+.conteudo-exercicio p {
+    padding: 0.5rem;
     background-color: white;
-}
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    width: 435px;
+} 
 
-img {
-    width: 500px;
-    border-radius: 6px;
-}
-
-.botao {
-    padding: 30px;
+.conteudo-exercicio p{
+    text-align: justify;
 }
 
 .acesso-pagina{
     background-color: rgb(39, 0, 145);
-    padding: 10px;
+    padding: 0.5rem;
     border-radius: 10px;
     text-decoration: none;
     color: white;
@@ -166,11 +143,53 @@ img {
 }
 
 .acesso-pagina:hover {
-    background-color: rgb(192, 198, 221);
+    background-color: rgb(118, 118, 255);
 }
 
+#brasileiro, #brasileiro2 {
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
 
-/* rodapé */
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    padding: 50px 0px;
+    background-color: rgb(39, 0, 145);
+    position: absolute;
+    width: 100%;
+    
+}
+
+.social{
+    display: flex;
+}
+
+.social a{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    border-radius: 50%;
+    margin: 22px 10px;
+    color: rgb(39, 0, 145);
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.social a:hover{
+    transform: scale(1.3);
+    transition: .3s;
+}
+
+/*
+
 
 footer {
     display: flex;
@@ -179,6 +198,7 @@ footer {
     color: white;
     padding: 50px;
     background-color: rgb(39, 0, 145);    
+    
 }
 
 .social{
@@ -239,10 +259,8 @@ footer {
         max-width: 300px;
     }
 
-    #brasileiro, #brasileiro2 {
-        padding-left: 5px;
-        padding-right: 5px;
-        font-size: 10px;
-    }
+
 
 }
+
+*/
