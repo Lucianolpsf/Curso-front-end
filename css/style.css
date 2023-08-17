@@ -69,6 +69,14 @@ nav a:hover {
     overflow: auto;
 }
 
+.menu-lateral::-webkit-scrollbar {
+    display: none;
+}
+.menu-lateral::-webkit-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
 .menu-lateral-lista {
     list-style: none;
     width: 100%;
