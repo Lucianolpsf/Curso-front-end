@@ -11,7 +11,7 @@
 * {
     margin: 0;
     padding: 0;   
-    font-family: Arial, sans-serif;
+    font-family: sans-serif;
 }
 
 html {
@@ -33,12 +33,11 @@ h1 {
 nav {
     text-align: right;
     padding: 12px;
-    background-color: var(--medio-escuro);
+    background-color: #000;
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.432);
 
 }
 
@@ -47,23 +46,21 @@ nav a {
     text-decoration: none;
     color: white;
     padding-bottom: 4px ;
-    border-bottom: 4PX solid  rgba(255, 255, 255, 0);
+    border-bottom: 4px solid  rgba(255, 255, 255, 0);
 }
 
 nav a:hover {
-    padding-bottom: 4px ;
-    border-bottom: 4PX solid white;
+    color: #66d8ec;
     transition: 0.5s;
-    border-radius: 30%;
 }
 
 /* lista de exercicios */
 .menu-lateral {
     padding-top: 70px;
-    width: 30vh;
+    width: 25vh;
     height: calc(100vh - 70px) ;
     color:white;
-    background-color: var(--card);
+    background-color: #202020;
     position: fixed;
     display: flex;
     overflow: auto;
@@ -86,15 +83,18 @@ nav a:hover {
     padding: 10px;
     padding-left: 25px;
     list-style: none;
+    transition: color 0.5s, background-color 0.5s;
+    color: white;
 }
 
 .menu-lateral-lista li a {
     text-decoration: none;
-    color: white;
+    color: inherit;
 }
 
 .menu-lateral-lista li:hover {
-    background-color: var(--medio);
+    background-color: rgb(255, 255, 255);
+    color: #66d8ec;
 }
 
 .container {
@@ -104,36 +104,31 @@ nav a:hover {
 .conteudo {
     padding: 70px 0 0 0;
     position: absolute;
-    left: 30vh;
-    background-color: var(--escuro);
-    width:calc(100% - 30vh)
+    left: 25vh;
+    background-color: white;
+    width:calc(100% - 25vh)
 }
 
 .conteudo-titulo {
-    background-color: rgba(195, 206, 228, 0.633);
+    background-color: #000;
     padding: 3rem;
-    border-radius: 5px;
     text-align: center;
     margin: 0rem 10%;
-    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.562);
+    color: #fff;
 }
 
 .conteudo-dupla {
     display: flex;
     justify-content:center;
-    background-color: rgba(131, 155, 201, 0.633);
     margin: 2rem 10%;
-    border-radius: 5px;
-    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.562);
     flex-wrap: wrap;
 }
 
 .conteudo-card {
     text-align:center; 
-    background-color: var(--card);
-    border-radius: 5px;
+    background-color: #202020;
     padding: 1rem;
-    margin: 1rem 2.5rem;
+    margin: 1rem 2rem;
     margin-bottom: 2rem;
     display: flex;
     flex-direction: column;
@@ -145,17 +140,18 @@ nav a:hover {
     color: white;
 }
 .conteudo-exercicio img {
-    max-width: 450px;
+    width: 400px;
     padding-bottom: 1rem;
     border-radius: 5px;
+    height: 300px;
+    object-fit: cover;
 }
 
 .conteudo-exercicio p {
-    padding: 0.5rem;
-    background-color: rgb(197, 198, 227);
-    border-radius: 5px;
+    padding: 0.5rem;  
+    color: white;
     margin-bottom: 1rem;
-    width: 435px;
+    max-width: 30rem;
 } 
 
 .conteudo-exercicio p{
@@ -163,15 +159,17 @@ nav a:hover {
 }
 
 .acesso-pagina{
-    background-color: var(--medio-escuro);
+    background-color: white;
     padding: 0.5rem;
     border-radius: 3px;
     text-decoration: none;
-    color: white;
+    color: #202020;
+    transition: background-color .3s, color .3s;
 }
 
 .acesso-pagina:hover {
-    background-color: var(--medio);
+    background-color: #39c7e0;
+    color: white;
 }
 
 #brasileiro, #brasileiro2 {
@@ -187,7 +185,7 @@ footer {
     align-items: center;
     color: white;
     padding: 50px 0px;
-    background-color: var(--medio-escuro);
+    background-color: black;
     position: absolute;
     width: 100%;
     
@@ -206,7 +204,7 @@ footer {
     background: white;
     border-radius: 50%;
     margin: 22px 10px;
-    color: rgb(39, 0, 145);
+    color: black;
     text-decoration: none;
     font-size: 25px;
 }
@@ -216,33 +214,14 @@ footer {
     transition: .3s;
 }
 
-@media (max-width: 1590px){
-    .conteudo-dupla {
-        flex-direction: column;
-    }
-    .conteudo-card {
-        margin: 2% 10%;
-    }
-}
 
 
 @media (max-width: 1024px){
-    
-    .menu-lateral {
-        width: 20vh;
-    }
-
     .menu-lateral-lista li{
         padding-left: 10px;
     }
 
-    .conteudo {
-        left: 20vh;
-        width:calc(100% - 20vh)
-    }
-
 }
-
 @media (max-width: 900px) {
    
     nav {
