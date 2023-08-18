@@ -1,292 +1,276 @@
-:root {
-    --claro: #7d7dfb;
-    --medio: #3333fa;
-    --escuro: #3d3d7a;
-    --medio-escuro: #18187a;
-    --card: #333d68;
-
-
-}
-
 * {
-    margin: 0;
-    padding: 0;   
-    font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 h1 {
-    margin-left: 70px;
-    color: white;
+  margin-left: 70px;
+  color: white;
 }
 
 /* navegação */
 
 #navegacao {
-    position: fixed;
-    z-index: 1;
+  position: fixed;
+  z-index: 1;
 }
 
 nav {
-    text-align: right;
-    padding: 12px;
-    background-color: #000;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-
+  text-align: right;
+  padding: 12px;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
 }
 
 nav a {
-    margin-right: 70PX;
-    text-decoration: none;
-    color: white;
-    padding-bottom: 4px ;
-    border-bottom: 4px solid  rgba(255, 255, 255, 0);
+  margin-right: 70px;
+  text-decoration: none;
+  color: white;
+  padding-bottom: 4px;
+  border-bottom: 4px solid rgba(255, 255, 255, 0);
 }
 
 nav a:hover {
-    color: #66d8ec;
-    transition: 0.5s;
+  color: #66d8ec;
+  transition: 0.5s;
 }
 
 /* lista de exercicios */
 .menu-lateral {
-    padding-top: 70px;
-    width: 25vh;
-    height: calc(100vh - 70px) ;
-    color:white;
-    background-color: #202020;
-    position: fixed;
-    display: flex;
-    overflow: auto;
+  padding-top: 70px;
+  width: 25vh;
+  height: calc(100vh - 70px);
+  color: white;
+  background-color: #202020;
+  position: fixed;
+  display: flex;
+  overflow: auto;
 }
 
 .menu-lateral::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
 .menu-lateral::-webkit-scrollbar {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 .menu-lateral-lista {
-    list-style: none;
-    width: 100%;
+  list-style: none;
+  width: 100%;
 }
 
-.menu-lateral-lista li{
-    padding: 10px;
-    padding-left: 25px;
-    list-style: none;
-    transition: color 0.5s, background-color 0.5s;
-    color: white;
+.menu-lateral-lista li {
+  padding: 10px;
+  padding-left: 25px;
+  list-style: none;
+  transition: color 0.5s, background-color 0.5s;
+  color: white;
 }
 
 .menu-lateral-lista li a {
-    text-decoration: none;
-    color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
 
 .menu-lateral-lista li:hover {
-    background-color: rgb(255, 255, 255);
-    color: #66d8ec;
+  background-color: rgb(255, 255, 255);
+  color: #66d8ec;
 }
 
 .container {
-    position: relative;
+  position: relative;
 }
 
 .conteudo {
-    padding: 70px 0 0 0;
-    position: absolute;
-    left: 25vh;
-    background-color: white;
-    width:calc(100% - 25vh)
+  padding: 70px 0 0 0;
+  position: absolute;
+  left: 25vh;
+  background-color: #fff;
+  width: calc(100% - 25vh);
 }
 
 .conteudo-titulo {
-    background-color: #000;
-    padding: 3rem;
-    text-align: center;
-    margin: 0rem 10%;
-    color: #fff;
+  background-color: #000;
+  padding: 3rem;
+  text-align: center;
+  margin: 0rem 10%;
+  color: #fff;
 }
 
 .conteudo-dupla {
-    display: flex;
-    justify-content:center;
-    margin: 2rem 10%;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  margin: 2rem 10%;
+  flex-wrap: wrap;
+  background-color: rgb(120, 119, 119);
 }
 
 .conteudo-card {
-    text-align:center; 
-    background-color: #202020;
-    padding: 1rem;
-    margin: 1rem 2rem;
-    margin-bottom: 2rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.562);
+  text-align: center;
+  background-color: #202020;
+  padding: 1rem;
+  margin: 1rem 2rem;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.562);
 }
 .conteudo-card h2 {
-    padding-bottom: 1rem;
-    color: white;
+  padding-bottom: 1rem;
+  color: white;
 }
 .conteudo-exercicio img {
-    width: 400px;
-    padding-bottom: 1rem;
-    border-radius: 5px;
-    height: 300px;
-    object-fit: cover;
+  width: 400px;
+  padding-bottom: 1rem;
+  border-radius: 5px;
+  height: 300px;
+  object-fit: cover;
 }
 
 .conteudo-exercicio p {
-    padding: 0.5rem;  
-    color: white;
-    margin-bottom: 1rem;
-    max-width: 30rem;
-} 
-
-.conteudo-exercicio p{
-    text-align: justify;
+  padding: 0.5rem;
+  color: white;
+  margin-bottom: 1rem;
+  max-width: 30rem;
 }
 
-.acesso-pagina{
-    background-color: white;
-    padding: 0.5rem;
-    border-radius: 3px;
-    text-decoration: none;
-    color: #202020;
-    transition: background-color .3s, color .3s;
+.conteudo-exercicio p {
+  text-align: justify;
+}
+
+.acesso-pagina {
+  background-color: white;
+  padding: 0.5rem;
+  border-radius: 3px;
+  text-decoration: none;
+  color: #202020;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 .acesso-pagina:hover {
-    background-color: #39c7e0;
-    color: white;
+  background-color: #39c7e0;
+  color: white;
 }
 
-#brasileiro, #brasileiro2 {
-    padding-left: 5px;
-    padding-right: 5px;
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;
+#brasileiro,
+#brasileiro2 {
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
 }
 
 footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: white;
-    padding: 50px 0px;
-    background-color: black;
-    position: absolute;
-    width: 100%;
-    
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  padding: 50px 0px;
+  background-color: black;
+  position: absolute;
+  width: 100%;
 }
 
-.social{
-    display: flex;
+.social {
+  display: flex;
 }
 
-.social a{
-    width: 50px;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: white;
-    border-radius: 50%;
-    margin: 22px 10px;
-    color: black;
-    text-decoration: none;
-    font-size: 25px;
+.social a {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  border-radius: 50%;
+  margin: 22px 10px;
+  color: black;
+  text-decoration: none;
+  font-size: 25px;
 }
 
-.social a:hover{
-    transform: scale(1.3);
-    transition: .3s;
+.social a:hover {
+  transform: scale(1.3);
+  transition: 0.3s;
 }
 
-
-
-@media (max-width: 1024px){
-    .menu-lateral-lista li{
-        padding-left: 10px;
-    }
-
+@media (max-width: 1024px) {
+  .menu-lateral-lista li {
+    padding-left: 10px;
+  }
 }
 @media (max-width: 900px) {
-   
-    nav {
-        padding: 2px;
-    }
-    nav h1 {
-        margin: 10px;
+  nav {
+    padding: 2px;
+  }
+  nav h1 {
+    margin: 10px;
 
-        font-size: 16px;
-    }
-    
-    nav a {
-        margin-right: 1rem;
-        text-decoration: none;
-    }
+    font-size: 16px;
+  }
 
+  nav a {
+    margin-right: 1rem;
+    text-decoration: none;
+  }
 
-    .menu-lateral {
-        display: none;
-    }
+  .menu-lateral {
+    display: none;
+  }
 
-    .conteudo {
-        left: 0vh;
-        width:100%; 
-    }
+  .conteudo {
+    left: 0vh;
+    width: 100%;
+  }
 
-    .conteudo-titulo {
-        padding: 1%;
-        border-radius: 10px;
-        margin: 0rem 5%;
-    }
+  .conteudo-titulo {
+    padding: 1%;
+    margin: 0rem 5%;
+  }
 
-    .conteudo-dupla {
-        background-color: transparent;
-        box-shadow: none;
-    }
-    
-    .conteudo-card {
-        padding: 3%;
-        padding-bottom: 3%;
-        margin: 0.5rem -6%;
-    }
-    .conteudo-card h2 {
-        padding-bottom: 1%;
-    }
-    .conteudo-exercicio img {
-        max-width: 95%;
-        padding-bottom: 2%;
-    }
-    
-    .conteudo-exercicio p{
-        width: 95%;
-        margin: auto;
-        margin-bottom: 3%;
-        
-        text-align: justify;
-        font-size: 80%;
-    }
+  .conteudo-dupla {
+    /* background-color: transparent; */
+    box-shadow: none;
+  }
 
-    .acesso-pagina{
-        padding: 0.5rem;
-        font-size: 70%;
-    }
+  .conteudo-card {
+    padding: 3%;
+    padding-bottom: 3%;
+    margin: 0.5rem -6%;
+  }
+  .conteudo-card h2 {
+    padding-bottom: 1%;
+  }
+  .conteudo-exercicio img {
+    max-width: 95%;
+    padding-bottom: 2%;
+  }
 
-    footer {
-        padding: 20px 0px;
-    }
+  .conteudo-exercicio p {
+    width: 95%;
+    margin: auto;
+    margin-bottom: 3%;
+
+    text-align: justify;
+    font-size: 80%;
+  }
+
+  .acesso-pagina {
+    padding: 0.5rem;
+    font-size: 70%;
+  }
+
+  footer {
+    padding: 20px 0px;
+  }
 }
