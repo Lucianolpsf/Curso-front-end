@@ -1,3 +1,12 @@
+:root{
+  --color-light: white;
+  --color-dark-light: rgb(120, 119, 119);
+  --color-dark-medium:#202020;
+  --color-dark:black;
+  --color-medium-dark:#39c7e0;
+  --color-medium-light: #66d8ec;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -10,7 +19,7 @@ html {
 
 h1 {
   margin-left: 70px;
-  color: white;
+  color: var(--color-light);
 }
 
 /* navegação */
@@ -23,7 +32,7 @@ h1 {
 nav {
   text-align: right;
   padding: 12px;
-  background-color: #000;
+  background-color: var(--color-dark);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -33,13 +42,13 @@ nav {
 nav a {
   margin-right: 70px;
   text-decoration: none;
-  color: white;
+  color: var(--color-light);
   padding-bottom: 4px;
-  border-bottom: 4px solid rgba(255, 255, 255, 0);
+  border-bottom: 4px solid var(--color-dark);
 }
 
 nav a:hover {
-  color: #66d8ec;
+  color: var(--color-medium-light);
   transition: 0.5s;
 }
 
@@ -48,8 +57,8 @@ nav a:hover {
   padding-top: 70px;
   width: 25vh;
   height: calc(100vh - 70px);
-  color: white;
-  background-color: #202020;
+  color: var(--color-light);
+  background-color: var(--color-dark-medium);
   position: fixed;
   display: flex;
   overflow: auto;
@@ -73,7 +82,7 @@ nav a:hover {
   padding-left: 25px;
   list-style: none;
   transition: color 0.5s, background-color 0.5s;
-  color: white;
+  color: var(--color-light);
 }
 
 .menu-lateral-lista li a {
@@ -82,8 +91,8 @@ nav a:hover {
 }
 
 .menu-lateral-lista li:hover {
-  background-color: rgb(255, 255, 255);
-  color: #66d8ec;
+  background-color: var(--color-light);
+  color: var(--color-medium-light);
 }
 
 .container {
@@ -94,16 +103,16 @@ nav a:hover {
   padding: 70px 0 0 0;
   position: absolute;
   left: 25vh;
-  background-color: #fff;
+  background-color: var(--color-light);
   width: calc(100% - 25vh);
 }
 
 .conteudo-titulo {
-  background-color: #000;
+  background-color: var(--color-dark);
   padding: 3rem;
   text-align: center;
   margin: 0rem 10%;
-  color: #fff;
+  color: var(--color-light);
 }
 
 .conteudo-dupla {
@@ -111,12 +120,12 @@ nav a:hover {
   justify-content: center;
   margin: 2rem 10%;
   flex-wrap: wrap;
-  background-color: rgb(120, 119, 119);
+  background-color: var(--color-dark-light);
 }
 
 .conteudo-card {
   text-align: center;
-  background-color: #202020;
+  background-color: var(--color-dark-medium);
   padding: 1rem;
   margin: 1rem 2rem;
   margin-bottom: 2rem;
@@ -127,7 +136,7 @@ nav a:hover {
 }
 .conteudo-card h2 {
   padding-bottom: 1rem;
-  color: white;
+  color: var(--color-light);
 }
 .conteudo-exercicio img {
   width: 400px;
@@ -139,7 +148,7 @@ nav a:hover {
 
 .conteudo-exercicio p {
   padding: 0.5rem;
-  color: white;
+  color: var(--color-light);
   margin-bottom: 1rem;
   max-width: 30rem;
 }
@@ -149,17 +158,17 @@ nav a:hover {
 }
 
 .acesso-pagina {
-  background-color: white;
+  background-color: var(--color-light);
   padding: 0.5rem;
   border-radius: 3px;
   text-decoration: none;
-  color: #202020;
+  color: var(--color-dark-medium);
   transition: background-color 0.3s, color 0.3s;
 }
 
 .acesso-pagina:hover {
-  background-color: #39c7e0;
-  color: white;
+  background-color: var(--color-medium-dark);
+  color: var(--color-light);
 }
 
 #brasileiro,
@@ -174,9 +183,9 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: white;
+  color: var(--color-light);
   padding: 50px 0px;
-  background-color: black;
+  background-color: var(--color-dark);
   position: absolute;
   width: 100%;
 }
@@ -191,10 +200,10 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: white;
+  background: var(--color-light);
   border-radius: 50%;
   margin: 22px 10px;
-  color: black;
+  color: var(--color-dark);
   text-decoration: none;
   font-size: 25px;
 }
