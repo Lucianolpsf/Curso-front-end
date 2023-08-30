@@ -51,48 +51,8 @@ nav a:hover {
   color: var(--color-medium-light);
   transition: 0.5s;
 }
-
-/* lista de exercicios */
-.menu-lateral {
-  padding-top: 70px;
-  width: 25vh;
-  height: calc(100vh - 70px);
-  color: var(--color-light);
-  background-color: var(--color-dark-medium);
-  position: fixed;
-  display: flex;
-  overflow: auto;
-}
-
-.menu-lateral::-webkit-scrollbar {
-  display: none;
-}
-.menu-lateral::-webkit-scrollbar {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-}
-
-.menu-lateral-lista {
-  list-style: none;
-  width: 100%;
-}
-
-.menu-lateral-lista li {
-  padding: 10px;
-  padding-left: 25px;
-  list-style: none;
-  transition: color 0.5s, background-color 0.5s;
-  color: var(--color-light);
-}
-
-.menu-lateral-lista li a {
-  text-decoration: none;
-  color: inherit;
-}
-
-.menu-lateral-lista li:hover {
-  background-color: var(--color-light);
-  color: var(--color-medium-light);
+nav div {
+  margin-right: 20em;
 }
 
 .container {
@@ -102,9 +62,8 @@ nav a:hover {
 .conteudo {
   padding: 70px 0 0 0;
   position: absolute;
-  left: 25vh;
   background-color: var(--color-light);
-  width: calc(100% - 25vh);
+  width: 100%;
 }
 
 .conteudo-titulo {
@@ -282,4 +241,12 @@ footer {
   footer {
     padding: 20px 0px;
   }
+}
+#ipesquisa {
+  position: fixed;
+  bottom: 10px;
+  width: 10vw;
+  left: 44vw;
+  z-index: 1;
+  margin: 0;
 }
