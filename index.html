@@ -15,7 +15,7 @@
     <title>Curso Front End</title>
 </head>
 <body>
-        <input type="search" name="pesquisa" id="ipesquisa" onchange="find(this.value)">
+        
         <nav id="navegacao">
             <h1><a href="https://github.com/Lucianolpsf/Curso-front-end" target="_blank"> Curso Front-End </a></h1>
             <div>
@@ -23,7 +23,15 @@
                 <a href="#social">Social</a>
             </div>
         </nav>
-   
+        <div id="ipesquisa-container">
+            <div id="ipesquisa-absolute">
+                <div class="sugestao">ola</div>
+                <div class="sugestao">ola</div>
+                
+                
+            </div>
+            <input type="search" name="pesquisa" id="ipesquisa" onchange="procura(this.value)">
+        </div>
         <div class="container">
         <div class="conteudo" id="inicio">
             <div class="conteudo-titulo">
