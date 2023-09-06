@@ -12,7 +12,7 @@ function procura(valor) {
     console.log(titulos2[0])
     let indexes = []
     while(containerSugestao.firstChild) {
-        containerSugestao.removeChild(containerSugestao.lastChild)
+        apagar(containerSugestao)
     }
     for(i = 0; i < titulos2.length; i++) {
         console.log(comparacao(i, titulos2, valorTratado))
@@ -23,21 +23,31 @@ function procura(valor) {
     }
     
     if(indexes.length != 0) {
+        let maximum = 0
         indexes.forEach(element => {
             console.log(indexes[6], element)
-            if(indexes[6] != element) {
+            if(maximum <= 5) {
                 const sugestao = containerSugestao.appendChild(document.createElement('a')) 
                 sugestao.setAttribute('href', `#${titulos2[element].parentElement.id}` )
                 sugestao.classList.add('sugestao')
                 sugestao.innerText = titulos2[element].innerHTML
                 console.log(titulos2[element].innerHTML)
+                maximum++
             }
         });
     }
 
-    console.log(indexes)
+    if(valor == '') {
+        while(containerSugestao.firstChild) {
+            apagar(containerSugestao)
+        }
+    }
+    
+    
 }
-
+function apagar(container) {
+    container.removeChild(container.lastChild)
+}
 
 function comparacao(index, items, valor) {
     const titulo = items[index].innerText.toLowerCase()
