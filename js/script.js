@@ -2,10 +2,10 @@ const barraDeProcura = document.getElementById('ipesquisa')
 barraDeProcura.addEventListener('input', ()=> {
     procura(barraDeProcura.value)
 })
-
+const titulos2 = Array.from(document.querySelectorAll('h2'))
 
 function procura(valor) {
-    const titulos2 = Array.from(document.querySelectorAll('h2'))
+    console.log(titulos2)
     const containerSugestao = document.getElementById('ipesquisa-absolute')
     titulos2.shift()
     const valorTratado = valor.toLowerCase()
@@ -45,6 +45,7 @@ function procura(valor) {
     
     
 }
+
 function apagar(container) {
     container.removeChild(container.lastChild)
 }

@@ -39,7 +39,7 @@ nav {
   width: 100%;
 }
 
-nav a {
+nav > div > a, nav > h1 > a {
   margin-right: 70px;
   text-decoration: none;
   color: var(--color-light);
@@ -51,9 +51,7 @@ nav a:hover {
   color: var(--color-medium-light);
   transition: 0.5s;
 }
-nav div {
-  margin-right: 20em;
-}
+
 
 .container {
   position: relative;
@@ -173,27 +171,16 @@ footer {
 }
 
 #ipesquisa-container {
-  position: fixed;
+  
   bottom: 10px;
-  width: 20vw;
-  left: 40vw;
+  width: 50vw;
+  left: 25vw;
   height: 3vh;
   z-index: 1;
   margin: 0;
 }
 
-#ipesquisa-absolute {
-  position: absolute;
-  height: auto;
-  width: 20vw;
-  bottom: 3vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: #fff;
-  color: #202020;
-}
+
 
 #ipesquisa {
   position: relative;
@@ -202,6 +189,19 @@ footer {
   bottom: 0;
   text-align: center;
   font-size: inherit;
+}
+
+#ipesquisa-absolute {
+  position: absolute;
+  height: auto;
+  width: 50vw;
+  bottom: 3vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  color: #202020;
 }
 
 .sugestao {
@@ -216,9 +216,6 @@ footer {
 }
 
 @media (min-width: 1024px) {
-  nav div {
-    margin-right: 30em;
-  }
   #ipesquisa-container {
     top: 12px;
     width: 20vw;
@@ -234,7 +231,7 @@ footer {
     position: absolute;
     height: auto;
     width: 20vw;
-    top: 3vh;
+    top: 6vh;
     bottom: auto;
     display: flex;
     flex-direction: column;
@@ -273,6 +270,9 @@ footer {
   }
 }
 @media (max-width: 900px) {
+  #ipesquisa-container {
+    position: fixed;
+  }
   nav {
     padding: 2px;
   }
@@ -282,7 +282,7 @@ footer {
     font-size: 16px;
   }
 
-  nav a {
+  nav > div > a, nav > h1 > a {
     margin-right: 1rem;
     text-decoration: none;
   }
