@@ -18,7 +18,6 @@ html {
 }
 
 h1 {
-  margin-left: 70px;
   color: var(--color-light);
 }
 
@@ -27,6 +26,8 @@ h1 {
 #navegacao {
   position: fixed;
   z-index: 1;
+  left: 0;
+  right: 0;
 }
 
 nav {
@@ -37,9 +38,10 @@ nav {
   align-items: center;
   justify-content: space-between;
   width: 100%;
+  padding: 20px;
 }
 
-nav a {
+nav > div > a, nav > h1 > a {
   margin-right: 70px;
   text-decoration: none;
   color: var(--color-light);
@@ -52,48 +54,6 @@ nav a:hover {
   transition: 0.5s;
 }
 
-/* lista de exercicios */
-.menu-lateral {
-  padding-top: 70px;
-  width: 25vh;
-  height: calc(100vh - 70px);
-  color: var(--color-light);
-  background-color: var(--color-dark-medium);
-  position: fixed;
-  display: flex;
-  overflow: auto;
-}
-
-.menu-lateral::-webkit-scrollbar {
-  display: none;
-}
-.menu-lateral::-webkit-scrollbar {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-}
-
-.menu-lateral-lista {
-  list-style: none;
-  width: 100%;
-}
-
-.menu-lateral-lista li {
-  padding: 10px;
-  padding-left: 25px;
-  list-style: none;
-  transition: color 0.5s, background-color 0.5s;
-  color: var(--color-light);
-}
-
-.menu-lateral-lista li a {
-  text-decoration: none;
-  color: inherit;
-}
-
-.menu-lateral-lista li:hover {
-  background-color: var(--color-light);
-  color: var(--color-medium-light);
-}
 
 .container {
   position: relative;
@@ -102,9 +62,8 @@ nav a:hover {
 .conteudo {
   padding: 70px 0 0 0;
   position: absolute;
-  left: 25vh;
   background-color: var(--color-light);
-  width: calc(100% - 25vh);
+  width: 100%;
 }
 
 .conteudo-titulo {
@@ -213,12 +172,110 @@ footer {
   transition: 0.3s;
 }
 
+#ipesquisa-container {
+  
+  bottom: 10px;
+  width: 50vw;
+  left: 25vw;
+  height: 3vh;
+  z-index: 1;
+  margin: 0;
+}
+
+
+
+#ipesquisa {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  text-align: center;
+  font-size: inherit;
+}
+
+#ipesquisa-absolute {
+  position: absolute;
+  height: auto;
+  width: 50vw;
+  bottom: 3.5vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  color: #202020;
+  z-index: -1;
+}
+
+.sugestao {
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  text-decoration: none;
+  color: inherit;
+  padding: 5px;
+}
+
+@media (min-width: 1024px) {
+  #ipesquisa-container {
+    top: 12px;
+    width: 20vw;
+    right: 50px;
+    left: auto;
+    bottom: auto;
+    height: 3vh;
+    z-index: 1;
+    margin: 0;
+  }
+  
+  #ipesquisa-absolute {
+    position: absolute;
+    height: auto;
+    width: 20vw;
+    top: 6vh;
+    bottom: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    color: #202020;
+    z-index: 99;
+  }
+  
+  #ipesquisa {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    text-align: center;
+    font-size: inherit;
+  }
+  
+  .sugestao {
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-decoration: none;
+    color: inherit;
+    padding: 5px;
+  }
+}
+
+
 @media (max-width: 1024px) {
   .menu-lateral-lista li {
     padding-left: 10px;
   }
 }
 @media (max-width: 900px) {
+  #ipesquisa-container {
+    position: fixed;
+  }
   nav {
     padding: 2px;
   }
@@ -228,7 +285,7 @@ footer {
     font-size: 16px;
   }
 
-  nav a {
+  nav > div > a, nav > h1 > a {
     margin-right: 1rem;
     text-decoration: none;
   }
